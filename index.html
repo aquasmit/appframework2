@@ -1,51 +1,38 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <title>Full Screen</title>
 
-	<link rel="stylesheet" type="text/css" href="appframework-2.1.0/build/css/af.ui.css" />
-	<link rel="stylesheet" type="text/css" href="appframework-2.1.0/build/css/icons.css" />
-	<script type="text/javascript" charset="utf-8" src="appframework-2.1.0/build/ui/appframework.ui.min.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Full Screen">
 
-    <script>   
-        $.ui.autoLaunch = false;        
-                
-        $(document).ready(function(){
-            $.ui.launch();
-            //alert('d');
-        });
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
 
-        function foo(){
-        	alert('f');
-        }
-    </script>	
+    <link rel="stylesheet" type="text/css" href="http://cdn.app-framework-software.intel.com/2.1/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.app-framework-software.intel.com/2.1/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="http://cdn.app-framework-software.intel.com/2.1/appframework.ui.min.js"></script>
+    
 </head>
+
 <body>
-	<div id="afui">
-	<header id="header1">
-	    <h1>New Title</h1>
-	    <a href="#" class="button icon location" onclick="foo()"></a>
-	    <a href="#settings" class="button icon settings" onclick="foo()" style="float:right">Setup</a>
-	</header>
-
+<div id="afui" class="ios">
     <div id="content" style="">
-        <div class="panel" title="Title" id="page1" data-header="header1" data-footer="none" selected="true">
- 		<!-- <header>
- 		      	            <h1>New Title</h1>
- 		      	            <a href="#" class="button icon location" onclick="foo()"></a>
- 		      	            <a href="#settings" class="button icon settings" style="float:right">Setup</a>
- 		      	        </header>   -->      	
-            <p>This is a Single View App template</p>
-
-            <form action="">
-                <select name="test" id="">
-                    <option value="x">x</option>
-                    <option value="y">y</option>
-                </select> 
-            </form>
+        <div class="panel" title="Hello" id="home" selected="true">
+            <br>
+            <p>This is main page</p>
+            <a class="button block" href="#next">Next Page</a>
+          
+          <select>
+            <option value="d">hihih</option>
+            <option value="k">bbbb</option>
+          </select>
         </div>
+        
+        <div class="panel" title="World" id="next">
+            <br>
+            <p>This is second page</p>
+        </div>        
     </div>
 </div>
 </body>
